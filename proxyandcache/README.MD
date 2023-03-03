@@ -18,7 +18,7 @@ The difference between this project and the aforementioned one is that this prox
 
 However, during this runtime while the proxy is still listening, when a client requests the HTTP info of a pre-requested URL, the proxy will check its cache. It will create a conditional HTTP request, essentially saying, "Please only give me the HTTP info if it has been modified since I last requested." If the info has been modified, then the server will give the proxy the new information. The proxy will update its info before forwarding it to the client. However, if the info wasn't modified, then the proxy will simply forward the information that it already stored in its cache.
 
-See the screenshots below of the proxy and client running in terminal. Notice how the first time a website is requested, the proxy receives "200 OK" saying, "Okay, here's the info." The next time a website is requested in the same runtime, the proxy receives "304 Not Modified," which means, "No it wasn't changed," after which it returns the info it already has.
+See the screenshots below of the proxy and client running in terminal. Notice how the first time a website is requested, the proxy receives "200 OK" saying, "Okay, here's the info." The next time a website is requested in the same runtime, the proxy receives "304 Not Modified," which means, "No it hasn't changed," after which it returns the info it already has.
 <img width="1440" alt="part1" src="https://user-images.githubusercontent.com/124002750/222602550-e129dbcf-44ae-4d23-9a23-4f5ba2145a38.png">
 <img width="1440" alt="part2" src="https://user-images.githubusercontent.com/124002750/222602562-9a5741a3-a82b-4280-859b-7cfebd215af0.png">
 
