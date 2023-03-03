@@ -4,6 +4,8 @@ Okay! This jumps off of my previous webproxy code. See the README file in that r
 
 Essentially, the system of files is comprised of web_proxy.py and web_client.py. In order for the system to work over multiple devices, they must all be run on the same network. You may also run the code on the same device using two different terminal windows.
 
+Please also ensure that among the proxy runner and client runner, both have the http named files in the same directory as their respective web_proxy.py and web_client.py files.
+
 On one device, run the following first:
 >python3 web_proxy.py
 
