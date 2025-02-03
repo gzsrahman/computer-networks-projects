@@ -1,6 +1,6 @@
 Remote TicTacToe Guide
 ===
-Okay! This was my first Computer Networks assignment!
+This was my first Computer Networks assignment!
 
 The server.py file opens a web socket on localhost with a specified port number. It then waits for the client.py file to connect to it.
 
