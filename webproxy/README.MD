@@ -1,6 +1,6 @@
 Web Proxy Guide
 ===
-Okay! This system of files creates a web socket for a proxy, which listens on its local network for a web client. The client ask the proxy for the HTTP info of a website, which the proxy will process, create the request for, send the request, and then forward the results to the client. Once the results are forwarded, the client will close its connection with the proxy, while the proxy will keep the web socket open, listening for more devices on its local network. This is a build up to my proxyandcache project also in this repository.
+This system of files creates a web socket for a proxy, which uses the local machine as a client via localhost. The client ask the proxy for the HTTP info of a website, which the proxy will process, create the request for, send the request, and then forward the results to the client. Once the results are forwarded, the client will close its connection with the proxy, while the proxy will keep the web socket open, allowing for continued use. This is a build up to my proxyandcache project also in this repository.
 
 The client in this case automatically requests example.com. You can change this by manually going into the file and asking for a different URL. Note, though, that right now this code only works for HTTP requests, not HTTPS.
 
