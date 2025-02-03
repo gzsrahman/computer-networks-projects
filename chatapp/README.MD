@@ -1,6 +1,6 @@
 Chat App Guide
 ===
-Hello! This folder contains a mini-chat system I created that runs over terminal! For right now, this adaptation only works running the server and client on the same device.
+This folder contains a mini-chat system I created that runs over terminal! For right now, this adaptation only works running the server and client on the same device.
 
 To begin, run the server in one terminal window by navigating to the appropriate directory and entering:
 > python3 chat_server.py
