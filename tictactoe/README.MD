@@ -2,15 +2,11 @@ Remote TicTacToe Guide
 ===
 Okay! This was my first Computer Networks assignment!
 
-The server.py file opens a web socket on its local network with a specified port number. It then waits for the client.py file to connect to it.
+The server.py file opens a web socket on localhost with a specified port number. It then waits for the client.py file to connect to it.
 
-The server will ask the client for how many dimensions they want to play with and randomly choose who should go first. Client.py prompts the player to make moves of their own choice while server.py makes its own randomized moves. The system then loops between each player until the game is over. It will print who won and the client will disconnect from the socket while the computer listens for any other client.py's who might connect.
+The server will ask the client for how many dimensions they want to play with and randomly choose who should go first. Client.py prompts the player to make moves of their own choice while server.py makes its own randomized moves. The system then loops between each player until the game is over. It will print who won and the client will disconnect from the socket while the computer listens for any new connections..
 
-For this code to work over multiple devices, they must all be connected to the same network.
-
-In order to run this program, make sure that whoever is running the server has the server file and tictactoe file in the same folder, and have them navigate to that directory in terminal. Whoever is running the client has to have the client and tictactoe file in the same folder and should do the same.
-
-If one device is functioning as both the server and the client, simply put all the files into the same folder and open two separate terminal windows.
+In order to run this program, make sure that the server file and tictactoe file are the same folder, and navigate to that directory in terminal. 
 
 The server needs to be run first, for which one should type:
 >python3 server.py
